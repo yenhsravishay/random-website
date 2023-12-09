@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main {
+    width: 100%;
+    height: 100vh;
+}
+#back{
+    width: 100%;
+    height: 100vh;
+}
+#back img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#top{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+#workingarea {
+    margin: 0 auto;
+    width: 80%;
+    height: 100vh;
+    max-width: 1920px;
+    position: relative;
+}
+#nav{
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#nav img{
+    height: 60px;
+}
+#nleft , #nright{
+    display: flex;
+    align-items: center;
+}
+#nav a{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    pointer-events: all;
+}
+#hero{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0%, -50%);
+}
+#heroleft{
+    min-width: 50%;
+}
+#heroleft .elem{
+    height: 3.9vw;
+    overflow: hidden;
+    position: relative;
+    top: 8vw;
+}
+#heroleft .elem h1{
+    line-height: .9;
+    color: white;
+    font-weight: 100;
+    font-size: 4vw;
+    font-family:cursive ;
+    text-transform: uppercase;
+}
+#heroleft button{
+    padding: -1.2vw 5vw;
+    font-size: 3vw;
+    font-family: cursive;
+    margin-top: 1vw;
+    pointer-events: all;
+    position: relative;
+    top: 9vw;
+}
+#heroright{
+    width: 17%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+#heroright p{
+    text-align: right;
+    font-size: 14px;
+    font-weight: 300;
+}
+#heroright #imagediv{
+    width: 100%;
+    height: 170px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    background-image: url(https://media.istockphoto.com/id/1323394484/photo/friendly-woman-waving-hand-goodbye-chao-adios-parting-say-bye-to-camera-beautiful-girl-waving.jpg?s=612x612&w=0&k=20&c=3Vd0xfOkXF8IzcySWUASippAvn4PKgC8a9uRs6O_IpY=);
+    background-size: cover;
+    background-position: center;
+}
+#heroright p:nth-child(3){
+    margin-bottom: 50px;
+}
